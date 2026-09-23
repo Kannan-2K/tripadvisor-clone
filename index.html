@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripadvisor Clone: Over a billion reviews</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="https://static.tacdn.com/favicon.ico"
+            alt="Tripadvisor Logo"
+            class="logo-icon"
+          />
+          <span class="logo-text">Tripadvisor</span>
+        </div>
+        <nav class="nav-links">
+          <div class="dropdown-container">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-compass"></i> Discover
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Travellers' Choice</a>
+              <a href="#" class="dropdown-item">Travel Stories</a>
+            </div>
+          </div>
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-heart"></i> Trips
+          </a>
+          <div class="dropdown-container">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-pen"></i> Review
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Write a review</a>
+              <a href="#" class="dropdown-item">Post photos</a>
+              <a href="#" class="dropdown-item">Add a place</a>
+            </div>
+          </div>
+          <a href="#" class="btn-signin">Sign in</a>
+        </nav>
+        <button class="burger-menu" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <h1 class="main-title">Where to?</h1>
+
+      <div class="search-tabs">
+        <button class="tab-btn active">
+          <i class="fa-solid fa-house"></i> Search All
+        </button>
+        <button class="tab-btn"><i class="fa-solid fa-bed"></i> Hotels</button>
+        <button class="tab-btn">
+          <i class="fa-solid fa-ticket"></i> Things to Do
+        </button>
+        <button class="tab-btn">
+          <i class="fa-solid fa-utensils"></i> Restaurants
+        </button>
+        <button class="tab-btn">
+          <i class="fa-solid fa-plane"></i> Flights
+        </button>
+        <button class="tab-btn">
+          <i class="fa-solid fa-key"></i> Vacation Rentals
+        </button>
+      </div>
+
+      <div class="search-bar-container">
+        <div class="search-input-group">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            placeholder="Places to go, things to do, hotels..."
+            class="search-input"
+          />
+        </div>
+        <button class="search-submit">Search</button>
+      </div>
+
+      <section class="banner-section">
+        <div class="banner">
+          <div class="banner-content">
+            <h2>Design your dream trip</h2>
+            <p>Create a custom itinerary with AI.</p>
+            <button class="btn-primary">Try it out</button>
+          </div>
+        </div>
+      </section>
+      <section class="interest-section mt-64 mb-64">
+        <h3>Find things to do by interest</h3>
+        <p class="subtitle">Whatever you're into, we've got it</p>
+
+        <div class="interest-grid mt-16">
+          <div class="interest-card">
+            <img
+              src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&q=80&w=400&h=400"
+              alt="Outdoors"
+            />
+            <div class="interest-overlay">
+              <h4>Outdoors</h4>
+            </div>
+          </div>
+          <div class="interest-card">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=400&h=400"
+              alt="Food"
+            />
+            <div class="interest-overlay">
+              <h4>Food</h4>
+            </div>
+          </div>
+          <div class="interest-card">
+            <img
+              src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=400&h=400"
+              alt="Culture"
+            />
+            <div class="interest-overlay">
+              <h4>Culture</h4>
+            </div>
+          </div>
+          <div class="interest-card">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/c9/1e/eb/caption.jpg?w=300&h=300&s=1"
+              alt="Water"
+            />
+            <div class="interest-overlay">
+              <h4>Water</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="weekend-banner mt-32">
+          <div class="banner-image">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=200&h=200"
+              alt="Paris"
+            />
+          </div>
+          <div class="banner-content-text">
+            <h4>
+              Here's how to do Paris in a weekend: Expert tips on fitting in all
+              the must-see—and must-eat—attractions
+            </h4>
+            <p>
+              Head off to Paris for a weekend getaway. Here's an itinerary that
+              covers all the major attractions like the Eiffel Tower and the
+              Louvre Museum for your next weekend break to Paris.
+            </p>
+          </div>
+          <div class="banner-action">
+            <button class="btn-read-now">Read now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <h2>Treat yourself to an award-winning meal</h2>
+        <p>2023's Travelers' Choice Best of the Best Restaurants</p>
+        <div class="card-grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400&h=300"
+              alt="Restaurant"
+            />
+            <h3>Fine Dining</h3>
+            <div class="rating">
+              <i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i>
+              <span>1,234 reviews</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=400&h=300"
+              alt="Restaurant"
+            />
+            <h3>Date Night</h3>
+            <div class="rating">
+              <i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle-half-stroke"></i>
+              <span>856 reviews</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&q=80&w=400&h=300"
+              alt="Restaurant"
+            />
+            <h3>Hidden Gems</h3>
+            <div class="rating">
+              <i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i>
+              <span>2,041 reviews</span>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=400&h=300"
+              alt="Restaurant"
+            />
+            <h3>Vegetarian Friendly</h3>
+            <div class="rating">
+              <i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-regular fa-circle"></i>
+              <span>502 reviews</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <h2>Go on an award-winning trip</h2>
+        <p>2023's Travelers' Choice Best of the Best Destinations</p>
+        <div class="card-grid">
+          <div class="card destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80&w=400&h=400"
+              alt="Paris"
+            />
+            <div class="card-overlay">
+              <h3>Paris, France</h3>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img
+              src="https://wallpaperaccess.com/full/5672205.jpg"
+              alt="Bali"
+            />
+            <div class="card-overlay">
+              <h3>Bali, Indonesia</h3>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/97/17/9e/riverside-view-of-south.jpg?w=300&h=300&s=1"
+              alt="London"
+            />
+            <div class="card-overlay">
+              <h3>London, UK</h3>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img
+              src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&q=80&w=400&h=400"
+              alt="Rome"
+            />
+            <div class="card-overlay">
+              <h3>Rome, Italy</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-sections">
+        <!-- Kiva Banner -->
+        <div class="promo-banner kiva-banner">
+          <div class="kiva-image">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/ce/6a/05/caption.jpg?w=600&h=-1&s=1"
+              alt="Kiva Partnership"
+            />
+            <!-- <span class="kiva-logo-overlay">kiva</span> -->
+          </div>
+          <div class="kiva-content">
+            <div class="foundation-logo">
+              <i class="fa-solid fa-owl"></i> Tripadvisor Foundation
+            </div>
+            <h2>Show some love to small businesses</h2>
+            <p>
+              Donate to Kiva.org today to provide loans to local entrepreneurs
+              and the Tripadvisor Foundation will match it, up to $150,000 USD
+              collectively. Terms apply.
+            </p>
+            <button class="btn-donate">Donate now</button>
+          </div>
+        </div>
+
+        <!-- Turkiye Banner -->
+        <div class="promo-banner turkiye-banner">
+          <div class="turkiye-image">
+            <img
+              src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=200&h=200"
+              alt="Türkiye Food"
+            />
+          </div>
+          <div class="turkiye-content">
+            <span class="partner-badge">In partnership with Go Türkiye</span>
+            <h3>Taste the soul of Türkiye</h3>
+            <p>
+              Make every meal an adventure in Türkiye, with standout dishes that
+              tell a thousand tales
+            </p>
+          </div>
+          <div class="turkiye-action">
+            <button class="btn-outline">Read now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Sections -->
+      <section class="carousel-section mt-64">
+        <h3>Your next trip is waiting</h3>
+        <p class="subtitle">Weekend getaways from Madurai</p>
+        <div class="carousel-container">
+          <div class="card-grid-square">
+            <div class="square-card">
+              <img
+                src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=400&h=400"
+                alt="Mahabalipuram"
+              />
+              <div class="square-card-overlay">
+                <h4>Mahabalipuram,<br />India</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://s3.india.com/wp-content/uploads/2024/07/Historical-Places-To-Visit-In-Ooty.jpg##image/jpg"
+                alt="Ooty"
+              />
+              <div class="square-card-overlay">
+                <h4>Ooty<br />(Udhagamandalam),<br />India</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://images.unsplash.com/photo-1620766165457-a8025baa82e0?auto=format&fit=crop&q=80&w=400&h=400"
+                alt="Chithirapuram"
+              />
+              <div class="square-card-overlay">
+                <h4>Chithirapuram,<br />India</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://karnatakatourism.org/wp-content/uploads/2020/10/Mysore-Palace-with-Lights.jpg"
+                alt="Mysuru"
+              />
+              <div class="square-card-overlay">
+                <h4>Mysuru (Mysore),<br />India</h4>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-nav next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="carousel-section mt-64 mb-64">
+        <h3>Iconic places you need to see</h3>
+        <div class="carousel-container mt-16">
+          <div class="card-grid-square">
+            <div class="square-card">
+              <img
+                src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&q=80&w=400&h=400"
+                alt="Rome"
+              />
+              <div class="square-card-overlay">
+                <h4>Rome, Italy</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=400&h=400"
+                alt="Paris"
+              />
+              <div class="square-card-overlay">
+                <h4>Paris, France</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/34/2d/28/caption.jpg?w=1400&h=-1&s=1&cx=662&cy=604&chk=v1_8984ddf3493edfb8c896"
+                alt="Las Vegas"
+              />
+              <div class="square-card-overlay">
+                <h4>Las Vegas, NV</h4>
+              </div>
+            </div>
+            <div class="square-card">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/97/17/9e/riverside-view-of-south.jpg?w=300&h=300&s=1"
+                alt="London"
+              />
+              <div class="square-card-overlay">
+                <h4>London, UK</h4>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-nav next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="carousel-section mt-64 mb-64">
+        <h3>Unforgettable bike tours across the globe</h3>
+        <p class="subtitle">
+          <a href="#" style="color: #5a5a5a; text-decoration: none"
+            >Explore on two wheels</a
+          >
+        </p>
+        <div class="carousel-container mt-16">
+          <div class="card-grid-square">
+            <div class="tour-card">
+              <div class="tour-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&q=80&w=400&h=400"
+                  alt="Versailles Palace"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="tour-card-content">
+                <h4>
+                  Versailles Palace Bike Tour with Market & Marie-Antoinette
+                  hamlet
+                </h4>
+                <div class="tour-rating">
+                  <span class="rating-number">4.9</span>
+                  <div class="rating-dots">
+                    <i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span class="review-count">(2,271)</span>
+                </div>
+                <div class="tour-price">from ₹12,241 per adult</div>
+              </div>
+            </div>
+
+            <div class="tour-card">
+              <div class="tour-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=400&h=400"
+                  alt="Berlin Highlights"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="tour-card-content">
+                <h4>
+                  Berlin Highlights Sightseeing Bike Tour 3.5h in Small Groups
+                </h4>
+                <div class="tour-rating">
+                  <span class="rating-number">4.8</span>
+                  <div class="rating-dots">
+                    <i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span class="review-count">(528)</span>
+                </div>
+                <div class="tour-price">from ₹3,930 per adult</div>
+              </div>
+            </div>
+
+            <div class="tour-card">
+              <div class="tour-image-wrapper">
+                <img
+                  src="https://www.pelago.co/img/products/GR-Greece/athens-electric-regular-bike-tour-optional-acropolis-guided-visit/07123377-8abb-4568-b2e5-2c68f451ff04_athens-electric-regular-bike-tour-optional-acropolis-guided-visit.jpg"
+                  alt="Athens Scenic"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="tour-card-content">
+                <h4>
+                  Athens Scenic Bike Tour with Regular or Electric Bike +
+                  Acropolis
+                </h4>
+                <div class="tour-rating">
+                  <span class="rating-number">5.0</span>
+                  <div class="rating-dots">
+                    <i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span class="review-count">(2,293)</span>
+                </div>
+                <div class="tour-price">from ₹5,063 per adult</div>
+              </div>
+            </div>
+
+            <div class="tour-card">
+              <div class="tour-image-wrapper">
+                <img
+                  src="https://tse3.mm.bing.net/th/id/OIP.NOMD9iX5IWUt55H-8Gg0OAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  alt="Washington DC"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="tour-card-content">
+                <h4>Washington DC Monuments Bike Tour</h4>
+                <div class="tour-rating">
+                  <span class="rating-number">4.8</span>
+                  <div class="rating-dots">
+                    <i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i
+                    ><i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span class="review-count">(353)</span>
+                </div>
+                <div class="tour-price">from ₹6,372 per adult</div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-nav next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="inspiration-section">
+      <div class="inspiration-section-inner">
+        <h3>Inspiration to get you going</h3>
+        <div class="carousel-container mt-16">
+          <div class="card-grid-inspiration">
+            <div class="inspiration-card">
+              <div class="inspiration-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&q=80&w=400&h=300"
+                  alt="Beaches"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="inspiration-content">
+                <p>6 beaches that keep summer going into fall</p>
+              </div>
+            </div>
+            <div class="inspiration-card">
+              <div class="inspiration-image-wrapper">
+                <img
+                  src="https://images.indianexpress.com/2025/04/Most-Expensive-Cities-to-Live-Around-the-World.jpg"
+                  alt="Cities"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="inspiration-content">
+                <p>A low-spend guide to the world's most expensive cities</p>
+              </div>
+            </div>
+            <div class="inspiration-card">
+              <div class="inspiration-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=400&h=300"
+                  alt="Street Food"
+                />
+                <button class="heart-btn">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="inspiration-content">
+                <p>8 top-tier street food cities around the world</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-nav next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="awards-section">
+      <div class="awards-section-inner">
+        <div class="awards-content">
+          <div class="awards-badge">
+            <i class="fa-solid fa-crow"></i>
+            <span>2026</span>
+          </div>
+          <h2>Travellers' Choice<br />Awards Best of the<br />Best</h2>
+          <p>
+            Among our top 1% of places, stays, eats, and experiences—<br />decided
+            by you.
+          </p>
+          <button class="btn-awards">See the winners</button>
+        </div>
+        <div class="awards-image-container">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1683141023289-49fdc6fa7506?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Rome by Golf Cart"
+            class="awards-main-image"
+          />
+          <div class="awards-tag-top">Rome by Golf Cart Private Tour</div>
+          <div class="awards-badge large-badge">
+            <i class="fa-solid fa-crow"></i>
+            <span>2026</span>
+          </div>
+          <div class="awards-tag-bottom">
+            <span class="user-handle">@K6966RFpatrickm</span>
+            <div class="user-rating">
+              <i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i
+              ><i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4>About Tripadvisor</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Resources and Policies</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Trust & Safety</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Tripadvisor Technology Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Write a review</a></li>
+              <li><a href="#">Add a Place</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Travellers' Choice</a></li>
+              <li><a href="#">Help Centre</a></li>
+              <li><a href="#">Travel Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Do Business With Us</h4>
+            <ul>
+              <li><a href="#">Owners & DMO/CVB</a></li>
+              <li><a href="#">Business Advantage</a></li>
+              <li><a href="#">Sponsored Placements</a></li>
+              <li><a href="#">Advertise with Us</a></li>
+              <li><a href="#">Access our Content API</a></li>
+            </ul>
+            <h4 class="mt-24">Get The App</h4>
+            <ul>
+              <li><a href="#">iPhone App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Tripadvisor Sites</h4>
+            <p class="footer-site-text">
+              Book tours and attraction tickets on <a href="#">Viator</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom-flex">
+          <div class="footer-bottom-left">
+            <div class="footer-logo-legal">
+              <div class="footer-logo-icon">
+                <i class="fa-solid fa-owl"></i>
+              </div>
+              <div class="footer-legal-text">
+                <div class="copyright">
+                  © 2026 Tripadvisor LLC All rights reserved.
+                </div>
+                <div class="legal-links">
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Privacy and Cookies Statement</a>
+                  <a href="#">Cookie consent</a>
+                  <a href="#">How the site works</a>
+                  <a href="#">Contact us</a>
+                  <a href="#">Accessibility Statement</a>
+                </div>
+              </div>
+            </div>
+            <p class="footer-description">
+              This is the version of our website addressed to speakers of
+              English in India. If you are a resident of another country or
+              region, please select the appropriate version of Tripadvisor for
+              your country or region in the drop-down menu.<br />
+              <a href="#" class="read-more"
+                >Read more <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </p>
+          </div>
+          <div class="footer-bottom-right">
+            <div class="footer-selectors">
+              <button class="selector-btn">
+                <span>₹ INR</span><i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <button class="selector-btn">
+                <span>India</span><i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+            <div class="footer-socials">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <button class="close-menu-btn" id="closeMenuBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="mobile-nav-container">
+          <a href="#" class="mobile-nav-link"
+            ><i class="fa-solid fa-compass"></i> Discover</a
+          >
+          <a href="#" class="mobile-nav-link"
+            ><i class="fa-solid fa-heart"></i> Trips</a
+          >
+          <a href="#" class="mobile-nav-link"
+            ><i class="fa-solid fa-pen"></i> Review</a
+          >
+          <a href="#" class="btn-signin mobile-signin">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
